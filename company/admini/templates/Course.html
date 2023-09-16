@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-4">
+
+        <h4 class="text-center alert alert-danger">Add_Details</h4>
+        <form action="" method="post">
+            {% csrf_token %}
+
+            {{fm.as_p}}
+            <input type="submit" class="btn btn-success" value="ADD">
+        </form>
+    </div>
+    <div class="col-sm-8">
+        <h4 class="text-center alert alert-danger">Student_Data</h4>
+
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">EMAIL</th>
+                <th scope="col">AGE</th>
+                <th scope="col">ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+{% for stu in stu %}
+              <tr>
+                <th scope="row">{{stu.id}}</th>
+                <td>{{stu.name}}</td>
+                <td>{{stu.email}}</td>
+                <td>{{stu.age}}</td>
+                <td>
+                    <a href="" class="btn btn-warning">Edit</a>
+                    <a href="" class="btn btn-danger">Delete</a>
+                </td>
+              </tr>
+{% endfor %}
+        </table>
+    </div>
+</div>      
+{% endblock content %}

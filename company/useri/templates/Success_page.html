@@ -1,0 +1,10 @@
+{% extends 'Registrationpage.html' %}
+
+{% block content %}
+  <h4>List of Students</h4>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.first_name }} {{ student.last_name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

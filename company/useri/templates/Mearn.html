@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        color: #ca4833;
+        /* Updated color */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        font-style: bold;
+        margin: 0;
+    }
+
+    .centered-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        /* Adjust the height as needed */
+    }
+
+    .centered-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .module {
+        background-color: #fff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .module h2 {
+        font-size: 20px;
+        color: #ca4833;
+        /* Updated color */
+    }
+
+    .module p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    #backButton {
+        background-color: #ff735c;
+        /* Button background color */
+        color: white;
+        /* Text color */
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        /* Smooth transition for hover effect */
+    }
+
+    #backButton:hover {
+        background-color: #ca4833;
+        /* Change background color on hover */
+    }
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>MEA(R)N Stack Web Development</h1>
+    </div>
+
+    <div class="centered-image">
+        <img src="https://img.freepik.com/free-vector/college-students-concept-illustration_114360-10205.jpg?w=1060&t=st=1694095260~exp=1694095860~hmac=39892a7b148dd6348d4f4170b3d490e3a3e6ce61914bccf0e42ff670b1b78a69"
+            alt="Centered Image">
+    </div>
+    <hr>
+
+    <div class="header">
+        <h1>What You Will Learn..?</h1>
+    </div>
+
+    <div class="header">
+        <h4>MODULE : MEA(R)N Stack Web Development Expert - Angular & React</h4>
+    </div>
+
+    <div class="module">
+        <h2>Mod1 : Web Components</h2>
+        <p>HTML, CSS, GIT, JavaScript / ES6, TypeScript, Bootstrap</p>
+    </div>
+
+    <div class="module">
+        <h2>Mod2 : MongoDB</h2>
+        <p>Introduction, install, Data modeling, CRUD- update(),delete(),insert(), find() method, Create Database &
+            Collections, Drop Database & Drop Collection, Data Types, Mongodb with Nodejs</p>
+    </div>
+
+    <div class="module">
+        <h2>Mod3 :Express JS</h2>
+        <p>Introduction, Install, Routing, HTTP Methods, URL Building, Middleware, Express with Database (Mongoose), JWT
+            Token Authentication, Rest APIs, Error handling, Best Practices</p>
+    </div>
+
+    <div class="module">
+        <h2>Mod4 : Angular</h2>
+        <p>Introduction, Install, How to set up a project, Angular CLI, Components and modules, Data binding and Event
+            binding, Dependency Injection, Templates and Directives, Pipes, Routing, Validators, RxJs,Parent child
+            communication, Services, Asynchronous event handling, HTTP Service and HTTP Client, Forms, Angular
+            animations and materials, Capstone Project</p>
+    </div>
+
+    <div class="module">
+        <h2>Mod5 : React Js</h2>
+        <p>Introduction, Install, How to set up a project, React Introduction, Environment Setup,Features, Angular vs
+            ReactJS, JSX, Components, Functional component, Class component, Rendering Lists, Conditional rendering,
+            State and Props, Component lifecycle, Forms, Controlled components, Consuming rest apis via axios, Events,
+            Routing - React router, Redux, Capstone Project</p>
+    </div>
+
+    <div class="module">
+        <h2>Mod6 : NODE JS</h2>
+        <p>Introduction, Install, How to create a nodejs app, how to create a nodejs server, sending basic request and
+            responses, Node Package Manager (NPM), Callbacks concept, Event-driven programming concepts, Event loop, and
+            Emitter, Buffers, Streams, File system, Global objects, Utility modules, Rest API through Nodejs</p>
+    </div>
+
+    <div class="mb-3" style="text-align-last: center;">
+        <a href="{% url 'course_showcase' %}">
+            <button class="btn btn-success" role="button" id='backButton'>
+                Back
+            </button>
+        </a>
+    </div>
+
+</body>
+
+</html>

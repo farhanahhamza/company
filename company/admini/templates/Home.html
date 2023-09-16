@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IES</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('./static/images/logimg.jpg');
+            /* Replace 'your-background-image.jpg' with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: #62d0e4;
+            /* Navbar background color */
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 100%;
+            width: 8%;
+        }
+
+        .navbar-brand strong {
+            color: #0a3f6c;
+            margin-left: 14px;
+        }
+
+        .btn-custom {
+            background-color: #0a3f6c;
+            /* Button background color */
+            color: #fff;
+            /* Text color */
+            margin-bottom: 70px;
+            /* Spacing between buttons */
+            padding: 30px 30px;
+            /* Increase button size */
+            font-size: 25px;
+            /* Increase font size */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./static/images/logo.png" alt="" class="d-inline-block align-text-top">
+                <strong>Institute Enquiry System</strong>
+            </a>
+            <div class="userinfo">
+                <i class="bi bi-person-fill" style="font-size: 30px;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add buttons for other pages -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Three vertical buttons on the left -->
+            <div class="col-md-4">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <a href="{% url 'course' %}" class="btn btn-custom btn-block">Course Management</a>
+                    <li class="nav-item">
+                        <a href="{% url 'main' %}" class="btn btn-custom btn-block">Sign Up/Sign In</a>
+                    </li>
+                    <a href="page3.html" class="btn btn-custom btn-block">-------------------</a>
+                </ul>
+            </div>
+            <!-- Three vertical buttons on the right -->
+            <div class="col-md-4 offset-md-4">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <a href="{% url 'course_showcase' %}" class="btn btn-custom btn-block"> Course_Showcase</a>
+                    <li class="nav-item">
+                        <a href="{% url 'register' %}" class="btn btn-custom btn-block">Enquiry_Details</a>
+                    </li>
+                    <a href="page6.html" class="btn btn-custom btn-block">-------------------</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Your content goes here -->
+
+    <!-- Include your other HTML content here -->
+
+    <!-- JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
